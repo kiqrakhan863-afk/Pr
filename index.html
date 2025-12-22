@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo">Alexndra</h2>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm Alexndra, a passionate web developer. I love creating interactive and modern websites.</p>
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Short description of Project 1.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Short description of Project 2.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Short description of Project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alexndra</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
