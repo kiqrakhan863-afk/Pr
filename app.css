@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('plants-bg.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.4); /* optional overlay for readability */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #e0f7e9;
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b4d1b;
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(46, 125, 50, 0.9);
+    color: #fff;
+}
