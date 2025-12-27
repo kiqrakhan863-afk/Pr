@@ -1,49 +1,47 @@
-import React from 'react';
-import './Portfolio.css'; // Make sure this CSS file exists
+// AboutUs.jsx
+import React from "react";
 
-const Portfolio = () => {
-  const projects = [
-    {
-      title: 'Plant Shop Website',
-      description: 'A responsive e-commerce website for a plant nursery with shopping cart and checkout features.',
-      img: 'project1.jpg',
-      link: 'https://github.com/yourusername/plant-shop',
-    },
-    {
-      title: 'Garden Blog',
-      description: 'A blog platform sharing gardening tips, plant care guides, and DIY tutorials.',
-      img: 'project2.jpg',
-      link: 'https://github.com/yourusername/garden-blog',
-    },
-    {
-      title: 'React Weather App',
-      description: 'A weather forecast app built with React and OpenWeather API.',
-      img: 'project3.jpg',
-      link: 'https://github.com/yourusername/react-weather',
-    },
-  ];
-
+const AboutUs = () => {
   return (
-    <div className="portfolio-container">
-      <header className="portfolio-header">
-        <h1>My Portfolio</h1>
-        <p>Check out some of my recent projects and work.</p>
-      </header>
-
-      <section className="projects">
-        <div className="project-cards">
-          {projects.map((project, index) => (
-            <div className="project-card" key={index}>
-              <img src={project.img} alt={project.title} />
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-          ))}
-        </div>
-      </section>
+    <div style={styles.container}>
+      <h1 style={styles.heading}>About Us</h1>
+      <p style={styles.paragraph}>
+        Welcome to Paradise Nursery! We are passionate about bringing nature closer to you. 
+        Our mission is to provide high-quality plants, gardening tools, and expert advice 
+        to help you create your perfect green space. Whether you're a seasoned gardener or 
+        just starting out, we have something for everyone.
+      </p>
+      <p style={styles.paragraph}>
+        Founded in 2010, Paradise Nursery has grown into a community of plant enthusiasts 
+        dedicated to promoting sustainable gardening practices and spreading the joy of 
+        greenery. We believe every home deserves a touch of nature.
+      </p>
+      <p style={styles.paragraph}>
+        Visit us in-store or explore our online shop to discover our wide selection of 
+        plants, pots, and accessories. Let's grow together!
+      </p>
     </div>
   );
 };
 
-export default Portfolio;
+const styles = {
+  container: {
+    padding: "2rem",
+    maxWidth: "800px",
+    margin: "0 auto",
+    fontFamily: "Arial, sans-serif",
+    lineHeight: "1.6",
+  },
+  heading: {
+    textAlign: "center",
+    marginBottom: "1.5rem",
+    color: "#2E8B57",
+  },
+  paragraph: {
+    marginBottom: "1rem",
+    fontSize: "1rem",
+    color: "#333",
+  },
+};
+
+export default AboutUs;
